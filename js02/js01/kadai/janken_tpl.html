@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<script src="js/jquery-2.1.3.min.js"></script>
+<link rel="stylesheet" href="css/sample.css">
+<title>じゃんけん</title>
+</head>
+<body>
+
+<header>
+  <h1>じゃんけん</h1>
+</header>
+
+<main>
+  <ul>
+    <li id="gu_btn">グー</li>
+    <li id="cho_btn">チョキ</li>
+    <li id="par_btn">パー</li>
+  </ul>
+  <div>コンピュータの出した手は？「<span id="pc_hands">なに？</span>」</div>
+  <div id="judgment">勝ち</div>
+</main>
+
+<footer></footer>
+<script>
+// じゃんけん用のSCRIPTを書いてください
+$("#gu_btn").on("click",function(){
+  const g = 2
+    console.log(g);
+});
+
+$("#gu_btn").on("click",function(){
+    const g = Math.ceil(Math.random() * 3); //1~3
+    console.log(g);
+    if (g == 2) {
+        $("#pc_hands").html("グー");
+        $("#judgment").html("あいこ")
+    }
+    if (g > 2) {
+        $("#pc_hands").html("パー");
+        $("#judgment").html("負け")
+    }
+    if (g < 2) {
+        $("#pc_hands").html("チョキ");
+        $("#judgment").html("勝ち")
+    }
+    
+});
+
+
+
+$("#cho_btn").on("click",function(){
+  const c = 2
+    console.log(c);
+});
+
+$("#cho_btn").on("click",function(){
+    const c = Math.ceil(Math.random() * 3); //1~3
+    console.log(c);
+    if (c == 2) {
+        $("#pc_hands").html("チョキ");
+        $("#judgment").html("あいこ")
+    }
+    if (c > 2) {
+        $("#pc_hands").html("グー");
+        $("#judgment").html("負け")
+    }
+    if (c < 2) {
+        $("#pc_hands").html("パー");
+        $("#judgment").html("勝ち")
+    }
+    
+});
+
+
+$("#par_btn").on("click",function(){
+  const p = 2
+    console.log(p);
+});
+
+$("#par_btn").on("click",function(){
+    const p = Math.ceil(Math.random() * 3); //1~3
+    console.log(p);
+    if (p == 2) {
+        $("#pc_hands").html("パー");
+        $("#judgment").html("あいこ")
+    }
+    if (p > 2) {
+        $("#pc_hands").html("チョキ");
+        $("#judgment").html("負け")
+    }
+    if (p < 2) {
+        $("#pc_hands").html("グー");
+        $("#judgment").html("勝ち")
+    }
+    
+});
+
+
+// $("#gu_btn").on("click",function(){
+//   const r = Math.ceil(Math.random() * 3); //1~3
+//     console.log(r);
+//     if(r ){
+
+//     }
+// });
+
+// $("#cho_btn").on("click",function(){
+//   const r = Math.ceil(Math.random() * 3); //1~3
+//     console.log(r);
+// });
+
+// $("#par_btn").on("click",function(){
+//   const r = Math.ceil(Math.random() * 3); //1~3
+//     console.log(r);
+// });
+    
+
+    
+    
+    
+    
+
+</script>
+</body>
+</html>

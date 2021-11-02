@@ -18,15 +18,24 @@
 <script>
 //年:1900~2022
 let y = ""; //例) y += '<option value="'+i+'">'+i+'</option>';
-
+for(let i = 1900; i <2023; i++) {
+    y += "<option>"+i+"</option>";
+}
+$("#year").html(y);
 
 //月:1~12
 let m = "";
-
+for(let i = 1; i <13; i++) {
+    m += "<option>"+i+"</option>";
+}
+$("#month").html(m);
 
 //日:1~31
 let d = "";
-
+for(let i = 1; i <32; i++) {
+    d += "<option>"+i+"</option>";
+}
+$("#date").html(d);
 
 
 </script>
