@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <link rel="stylesheet" href="css/sample.css">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+//1.配列を作成（必要な分だけ。。。今回は適当数に記述）
+const week = ["⽇","⽉","⽕","⽔","⽊","⾦","⼟"];
+//2.変数の⼊れ物を作成
+let str = "";
+//3.繰返し処理で、⽂字列と配列を組み合わせ作成
+for ( let i=0; i<week.length; i++ ) {
+str += week[i]+"<br>"; //配列:ar[i]
+}
+//4.変数「str」に⼊ってる⽂字列をpタグid="view"に表⽰
+$("#view").html(str);
+</script>
+
+</body>
+</html>
