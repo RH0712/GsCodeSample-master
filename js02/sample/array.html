@@ -20,15 +20,16 @@
 //記述練習
 const d = ["日","月","火","水","木","金","土"];
 
-const a = ["大吉","中吉","笑吉","基地","狂"]
+const a = ["大吉","中吉","笑吉","基地","狂"];
 a.push("大凶");
 a.unshift("超大吉");
 // a.pushは後ろに追加される。a.unshiftは前に追加される
 
 // const r = Math.floor(Math.random() *5)
 const r = Math.floor(Math.random() * a.length)
-// a.lengthで自動的に数の幅を自動を追加してくれる
+// floorにすることで、0含めてカウントしてくれる。a.lengthで自動的に数の幅を自動を追加してくれる。
 console.log(a[r]);
+// r（乱数）番目を選択してることになる
 
 const x = a.length;
 console.log(x);
